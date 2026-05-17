@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #f3f0e8;
+  --cream-soft: #ebe7dc;
+  --black: #111111;
+  --dark: #1a1a1a;
+  --gray: #73736d;
+  --line: #ded9cc;
+  --orange: #ff6b1a;
+  --card: #f8f5ee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--black);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--orange);
+  color: white;
+}
+
+.section-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 96px 24px;
+}
+
+.glass-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 70px rgba(17, 17, 17, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.soft-card {
+  background: var(--cream-soft);
+  border: 1px solid var(--line);
+}
+
+.skill-badge {
+  border: 1px solid var(--line);
+  background: #fffaf0;
+  color: var(--black);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #111111, #ff6b1a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.primary-button {
+  background: var(--black);
+  color: white;
+  border: 1px solid var(--black);
+  transition: all 0.25s ease;
+}
+
+.primary-button:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  transform: translateY(-2px);
+}
+
+.outline-button {
+  background: transparent;
+  color: var(--black);
+  border: 1px solid var(--black);
+  transition: all 0.25s ease;
+}
+
+.outline-button:hover {
+  background: var(--black);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.timeline-line {
+  background: var(--orange);
+}
